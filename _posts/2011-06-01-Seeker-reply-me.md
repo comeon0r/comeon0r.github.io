@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Seeker的回信
-category: 生活
-tags: 随感
+title: 关于我 | More Detail About Me
+category: Life
+tags: Myself
 keywords: 
 description: 
 ---
