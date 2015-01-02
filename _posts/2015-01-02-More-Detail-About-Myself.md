@@ -36,6 +36,15 @@ description:
 
 本科、研究生，在南京大学计算机系度过。
 
-### 重点创新项目
-<center><img src="/public/img/njucreative.jpg" style="width:50%"></center>
+### 北京微软参加Windows Phone7 Pioneer活动
 
+### 英特尔实习
+
+### 摩根士丹利实习
+
+### 大学期间获得过的奖项
+
+## 做过的项目
+
+### 本科生重点创新项目《计算机系新生网络助手》
+<center><img src="/public/img/njucreative.jpg" style="width:50%"></center>
