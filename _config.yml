@@ -20,8 +20,8 @@ url: http://comeon0r.github.io/
 rss_url: /pages/atom.xml
 
 # gavatar头像及Favicon
-gavatar: http://yansu-uploads.stor.sinaapp.com/imgs/gavatar.png
-favicon: http://yansu-uploads.stor.sinaapp.com/imgs/favicon.ico
+gavatar: /public/img/myself.png
+favicon: /public/img/myself.png
 
 # google analytics 设置
 ga:
@@ -30,7 +30,7 @@ ga:
 
 # disqus 设置
 disqus:
-  shortname: suyan-zh
+  shortname: chenyuanjun
 
 # 主题设置，自动激活某个标签
 active: 技术
@@ -42,8 +42,8 @@ cates:
 
 # 中文本地化
 locals:
-  tags: 标签
-  about: 关于
-  newest: 最新文章
-  archive: 归档
-  content: 目录
+  tags: Tags
+  about: About
+  newest: Newest
+  archive: Archive
+  content: Content
