@@ -36,13 +36,15 @@ description:
 <center><img src="/public/img/cs.jpg" style="width:50%"></center>
 
 ### 微软WP7培训
-作为项目带头人，到北京微软参加WP
+作为项目带头人，到北京微软参加WP7培训。
 <center><img src="/public/img/microsoft.jpg" style="width:50%"></center>
 
 ### 英特尔实习
+在Validation Team从事SelfHelp工具的研发。
 <center><img src="/public/img/intel.jpg" style="width:50%"></center>
 
 ### 摩根士丹利实习
+在MMQ组从事大型金融自动化工具的开发。
 <center><img src="/public/img/morganstanley.jpg" style="width:50%"></center>
 
 ### 大学期间获得过的奖项
