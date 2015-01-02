@@ -15,6 +15,7 @@ description:
 <center><img src="/public/img/hainan.jpg" style="width:50%"></center>
 
 ## 中学时代
+<center><img src="/public/img/hainanzhongxue.jpg" style="width:50%"></center>
 
 ### 竞赛小子
 
@@ -24,19 +25,17 @@ description:
 
 因数学联赛全国一等奖，获得保送大学资格。
 
-<center><img src="/public/img/hainanzhongxue.jpg" style="width:50%"></center>
-
 ### 创新大赛
 
 十八届海南创新大赛二等奖。
 
 ## 大学之路
+<center><img src="/public/img/nju.jpg" style="width:50%"></center>
 
 ### 南大计算机系
 
 本科、研究生，在南京大学计算机系度过。
 
-<center><img src="/public/img/nju.jpg" style="width:50%"></center>
 
 ### 重点创新项目
 
