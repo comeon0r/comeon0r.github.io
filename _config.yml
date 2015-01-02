@@ -7,16 +7,16 @@ kramdown:
 
 # 作者信息
 author: 
-  name: 闫肃
-  email: suyan0830@gmail.com
-  link: http://yansu.org
-  weibo: http://weibo.com/yansu0711
-  github: http://github.com/suyan
+  name: 陈园军
+  email: chen.nianxin@gmail.com
+  link: http://comeon0r.github.io/
+  weibo: http://weibo.com/chenyuanjun/
+  github: http://github.com/chenyj
 
 # 站点信息
-title: 闫肃的博客 
-description: 闫肃的博客
-url: http://yansu.org
+title: 陈园军(Chen Yuanjun)的博客 
+description: 陈园军的博客
+url: http://comeon0r.github.io/
 rss_url: /pages/atom.xml
 
 # gavatar头像及Favicon
