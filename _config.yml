@@ -18,7 +18,7 @@ url: http://comeon0r.github.io
 rss_url: /pages/atom.xml
 
 # gavatar头像及Favicon
-gavatar: /public/img/myself.jpg
+gavatar: /public/img/myself.png
 favicon: /public/img/deer3.png
 
 # google analytics 设置
