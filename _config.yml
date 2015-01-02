@@ -12,13 +12,13 @@ author:
   linkedin: www.linkedin.com/in/chenyj
 
 # 站点信息
-title: 林安亚的博客
+title: 陈园军(Yuanjun Chen)的博客
 description: My personal blog
-url: http://painterlin.com
+url: http://comeon0r.github.io
 rss_url: /pages/atom.xml
 
 # gavatar头像及Favicon
-gavatar: /public/img/deer3.png
+gavatar: /public/img/myself.jpg
 favicon: /public/img/deer3.png
 
 # google analytics 设置
