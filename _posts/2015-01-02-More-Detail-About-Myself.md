@@ -36,7 +36,6 @@ description:
 
 本科、研究生，在南京大学计算机系度过。
 
-
 ### 重点创新项目
-
+<center><img src="/public/img/njucreative.jpg" style="width:50%"></center>
 
