@@ -31,17 +31,19 @@ description:
 <center><img src="/public/img/nju.jpg" style="width:50%"></center>
 
 ### 南大计算机系
+本科、研究生，在南京大学计算机系度过。
+我想起了那天夕阳下的奔跑，那是我不悔的青春~
 <center><img src="/public/img/cs.jpg" style="width:50%"></center>
 
-本科、研究生，在南京大学计算机系度过。
-
 ### 微软WP7培训
+作为项目带头人，到北京微软参加WP
 <center><img src="/public/img/microsoft.jpg" style="width:50%"></center>
 
 ### 英特尔实习
 <center><img src="/public/img/intel.jpg" style="width:50%"></center>
 
 ### 摩根士丹利实习
+<center><img src="/public/img/morganstanley.jpg" style="width:50%"></center>
 
 ### 大学期间获得过的奖项
 
