@@ -24,9 +24,9 @@ gavatar: /public/img/myself.png
 favicon: /public/img/myself.png
 
 # google analytics 设置
-ga:
-  id: UA-54767140-1
-  url: yansu.org
+#ga:
+#  id: UA-54767140-1
+#  url: yansu.org
 
 # disqus 设置
 disqus:
