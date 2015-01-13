@@ -1,6 +1,6 @@
 ### 我的博客
 
-地址：[http://yansu.org](http://yansu.org)
+地址：[http://comeon0r.github.io](http://comeon0r.github.io)
 
 ### 安装说明
 
