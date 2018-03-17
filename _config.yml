@@ -1,49 +1,32 @@
-permalink: /:year/:month/:day/:title.html
-paginate: 10
-markdown: kramdown
+# This is the default format. 
+# For more see: https://github.com/mojombo/jekyll/wiki/Permalinks
+# permalink: /:categories/:year/:month/:day/:title 
+permalink: /blog/:year/:month/:title.html 
+include: ['.htaccess']
+exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md", "CNAME", "Gemfile", "Gemfile.lock"]
+markdown: redcarpet
+highlights: pygments
+lsi: false
+timezone: Asia/Shanghai
+safe: false
 
-kramdown:
-  input: GFM
+JB :
+  ASSET_PATH : http://zhu8.qiniudn.com/assets
+  IMAGE_PATH : http://zhu8.qiniudn.com/images
+# auto: true # deprecated
 
-# 作者信息
-author: 
-  name: 陈园军
-  email: chen.nianxin@gmail.com
-  link: http://comeon0r.github.io/
-  weibo: http://weibo.com/chenyuanjun/
-  github: http://github.com/chenyj
-
-# 站点信息
-title: 陈园军(Chen Yuanjun)的博客 
-description: 陈园军的博客
-url: http://comeon0r.github.io/
-rss_url: /pages/atom.xml
-
-# gavatar头像及Favicon
-gavatar: /public/img/myself.png
-favicon: /public/img/myself.png
-
-# google analytics 设置
-#ga:
-#  id: UA-54767140-1
-#  url: yansu.org
-
-# disqus 设置
-disqus:
-  shortname: chenyuanjun
-
-# 主题设置，自动激活某个标签
-active: 技术
-
-# 首页除了最新文章外显示分类
-cates: 
-  - Python
-  - OpenStack
-
-# 中文本地化
-locals:
-  tags: Tags
-  about: About
-  newest: Newest
-  archive: Archive
-  content: Content
+# Themes are encouraged to use these universal variables 
+# so be sure to set them if your theme uses them.
+#
+url: http://git.chenjun.com
+title: ChenJun(Zhu8)-浮生志
+tagline: On The Way to Philistinism...
+about: <a href="http://chenjun.com/"><strong>陈俊</strong></a>ChenJun(Zhu8)的个人网站，江苏人士，83年生人，电子产品自虐狂，<a href="http://chenjun.com/wang2/"><strong>王小波</strong></a>门下走狗，欢迎<strong>Fork</strong>本站@<a href="https://github.com/Zhu8/zhu8.github.io/fork">Github</a>。
+author:
+  name: Chen Jun(Zhu8)
+  email: zhu8.net@gmail.com
+  github: Zhu8
+  twitter: 5CJ
+  facebook: ichenjun
+  googleplus: +ChenJun
+  feedburner : Zhu8/github
