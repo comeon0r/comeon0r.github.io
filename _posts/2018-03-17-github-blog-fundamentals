@@ -1,0 +1,11 @@
+---
+title: github建博客的基本原理
+date: 2018-03-17
+categories:
+  - 言吾 | Talk
+tags:
+  - College
+  - Daily
+  - Love
+---
+在github上建一个简单的博客是真正的“速食”技术，花费时间不会超过10分钟。透过现象看本质，其技术就是github pages+Jekyll
