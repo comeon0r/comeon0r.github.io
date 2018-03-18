@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "一个Performance Issue的快速解决"
+title:  "一个Performance Issue的解决与反思"
 categories: Frontend
 tags:  github blog pages jekyll
 author: Eric
