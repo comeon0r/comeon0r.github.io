@@ -11,6 +11,8 @@ author: Eric
 
 最近手贱改了Intellij的各种配置，在编译一个项目时，出现了一个奇怪的编译错误：
 
+“XXX is already defined as object XXX”
+
 ![index](http://static.zybuluo.com/comeon0r/5vg1whmnctbb4c3d9xxuhsxx/Screen%20Shot%202018-03-14%20at%201.57.39%20PM.png)
 
 
