@@ -23,7 +23,7 @@ author: Eric
 
 问题来了，不是已经有了README.md了吗？README.md只是一个文件，而Github Pages支持站内生成网页。
 
-Github Pages的网页还会经过Jekyll的再处理。
+Github Pages的网页还会经过Jekyll的再处理，这使得它能提供更丰富的功能。
 
 # Jekyll是什么
 
