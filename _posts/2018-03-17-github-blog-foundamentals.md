@@ -15,6 +15,12 @@ author: Eric
 
 # Github Pages是什么
 
+[Github Pages](https://pages.github.com/)用Github官网的原话说，是“Websites for you and your projects. Hosted directly from your GitHub repository. Just edit, push, and your changes are live.” 说白了是Github推出的由用户编写的、托管在github上的静态网页。它的解决的痛点是，用户的repo通常由大量的代码组成，越复杂的repo越让人无从下手，这时候你可以给自己的repo建一个静态网站，小白也能看得懂了。
+
+问题来了，不是已经有了README.md了吗？README.md只是一个文件，而Github Pages支持站内生成网页。
+
+Github Pages的网页还会经过Jekyll的再处理。
+
 # Jekyll是什么
 
 https://jekyllrb.com/
