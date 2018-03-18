@@ -23,4 +23,4 @@ https://jekyllrb.com/
 
 那么，如何在github上找到合适自己的Github Blog Theme呢，一个很简单的技巧是，在github上搜索比如“jekyll github.io”或者“jekyll blog”之类的关键词：
 
-
+![index](http://static.zybuluo.com/comeon0r/yjzodrs4ejlc02kg4r8i6tuc/Screen%20Shot%202018-03-18%20at%202.15.45%20PM.png)
