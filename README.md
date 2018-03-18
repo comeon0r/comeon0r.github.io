@@ -18,7 +18,6 @@ ex-employee of Morgan Stanley.
 
 graduated from Nanjing University.
 
-
-https://camo.githubusercontent.com/b3271cb16c829bba0d000e316736870d5b912894/687474703a2f2f7468756d62736e61702e636f6d2f692f4d5846696c6c77762e706e67
+![index](https://camo.githubusercontent.com/b3271cb16c829bba0d000e316736870d5b912894/687474703a2f2f7468756d62736e61702e636f6d2f692f4d5846696c6c77762e706e67)
 
 
