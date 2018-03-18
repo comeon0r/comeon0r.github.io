@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "一个Performance Issue的解决与反思"
-categories: Frontend
-tags:  github blog pages jekyll
+categories: Big-Data
+tags:  performance big-data grafana issue
 author: Eric
 ---
 
