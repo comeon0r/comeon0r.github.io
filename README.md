@@ -1,6 +1,6 @@
 # About this Theme
 
-This cool Jekyll blog theme is forked from: [http://gaohaoyang.github.io/](http://gaohaoyang.github.io/). 
+This cool Jekyll blog theme is forked from: [http://gaohaoyang.github.io/](http://gaohaoyang.github.io/), [https://github.com/Gaohaoyang/gaohaoyang.github.io/blob/master/README-zh-cn.md](tutorial). 
 
 **If you like it, dont't forget to say thank you to gaohaoyang for his excellent job.**
 
