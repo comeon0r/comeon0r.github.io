@@ -14,3 +14,9 @@ P.S. gaohaoyang is a frontend developer in Tmall.
 
 eBay China · Senior Software Engineer.
 
+ex-employee of Morgan Stanley.
+
+graduated from Nanjing University.
+
+
+
