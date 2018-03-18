@@ -15,3 +15,12 @@ author: Eric
 
 # Github Pages是什么
 
+# Jekyll是什么
+
+https://jekyllrb.com/
+
+# 其他
+
+那么，如何在github上找到合适自己的Github Blog Theme呢，一个很简单的技巧是，在github上搜索比如“jekyll github.io”或者“jekyll blog”之类的关键词：
+
+
