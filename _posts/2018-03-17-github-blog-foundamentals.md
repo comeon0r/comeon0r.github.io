@@ -25,9 +25,20 @@ author: Eric
 
 Github Pages的网页还会经过Jekyll的再处理，这使得它能提供更丰富的功能。
 
+
 # Jekyll是什么
 
-https://jekyllrb.com/
+[Jekyll](https://jekyllrb.com/)是a popular static site generator designed for blogging and software documentation，它是Github默认的模板系统。
+
+什么叫static site generator（静态站点生成器）？比如你可以根据Jekyll的规范，写出一些网页源码，static site generator会根据这些网页源码生成静态文件，Jekyll还提供了模板、变量、插件等功能。
+
+通过Jekyll在github pages上创建的博客具体有哪些规范呢？ 比如
+
+- 配置文件名为_config.yml
+- 模板文件放在_layouts目录
+- Jekyll使用Liquid模板语言，{{ page.title }}表示文章标题，{{ content }}表示文章内容，等等。
+- blog文章存放在_posts目录。
+
 
 # 其他
 
