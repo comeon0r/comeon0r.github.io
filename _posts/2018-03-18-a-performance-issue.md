@@ -15,4 +15,10 @@ author: Eric
 
 ![index](http://static.zybuluo.com/comeon0r/dulolwh47ytb1tre05ie9joj/image001.png)
 
+p75的response time大概是75ms，经过计算，能满足我们的上线要求。
 
+过年就开心地玩耍去了。
+
+年后回来又测了一遍，傻眼了，performance degradation非常明显：
+
+![index](http://static.zybuluo.com/comeon0r/m1diqob5o7c5lx6m0barzcgx/image006.png)
