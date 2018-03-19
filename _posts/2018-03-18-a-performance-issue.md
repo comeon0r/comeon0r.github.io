@@ -27,4 +27,12 @@ p75下的response time退化到了748ms，更别提p95了。这种情况是万�
 
 开始查找原因！
 
-分析1：
+分析1：是因为这个external service存在缺陷，会因call number的提升而导致明显的performance degradation？
+
+看起来不像，因为在立项前的测试中，我在系统中直接call这个external service，用的是全量数据，call number从图中看明显比年后的压力测试更大，然而性能却更好。否决！
+
+分析2：当前external service存在性能问题？
+
+紧急联系了对方的邮件组，回应速度非常快：“We are investigating, but so far I don’t see any issues。。。”，还附了一张图：
+
+![index](http://static.zybuluo.com/comeon0r/ckx6vth6xdx67ntdxaj2vxat/image005.png)
