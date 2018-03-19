@@ -57,5 +57,12 @@ p75下的response time退化到了748ms，更别提p95了。这种情况是万�
 
 2）尝试关闭系统里其他的service calling，减少端口占用的情况，看是否有缓解，结论：并没有。
 
+## 柳暗花明
 
+毫无办法之际，继续看了下log，突发奇想对每秒的call number进行了下统计：
+
+```
+$ grep 'bullseye sending' lina-test-mobile.out | grep "20:35:.*" | wc -l
+1454
+```
 
