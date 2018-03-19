@@ -95,4 +95,6 @@ $ grep 'bullseye sending' lina-test-mobile.out | grep "20:35:.*" | wc -l
 
 回过头来再检查代码，发现是系统设计的问题，我们会将输入数据按照某种规则分组，相同的组的数据会通过一个actor-dispactcher申请到大概2500个actor来同时跑，这会导致相同类型的数据几乎是同时跑，也就是会同时调用某个external service。
 
-验证一下，把actor-dispactcher的actor number改为一个很小的数，
+验证一下，把actor-dispactcher的actor number改为一个很小的数，比如100，性能马上就变好了：
+
+![index](http://static.zybuluo.com/comeon0r/ou6getnxukxle68zxa7gg4by/Screen%20Shot%202018-03-10%20at%204.18.18%20PM.png)
