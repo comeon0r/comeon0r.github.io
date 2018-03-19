@@ -17,7 +17,7 @@ author: Eric
 
 ![index](http://static.zybuluo.com/comeon0r/dulolwh47ytb1tre05ie9joj/image001.png)
 
-可以看到，p75的response time大概是75ms，经过计算，能满足我们的上线要求。
+可以看到，p75的response time大概是51ms，经过计算，能满足我们的上线要求。
 
 项目完成之后，简单地又做了性能测试，结果也不错，过年就开心地玩耍去了。
 
