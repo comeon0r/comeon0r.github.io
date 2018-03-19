@@ -13,7 +13,7 @@ author: Eric
 
 # 背景
 
-背景：年前一直在integrate一个广告推荐模块，调用的是一个external service。依照惯例，在立项之前就做了性能测试，效果还是不错滴。
+年前话了大量的时间在integrate一个广告推荐模块，调用的是一个external service。依照惯例，在立项之前就做了性能测试，效果还是不错滴。
 
 ![index](http://static.zybuluo.com/comeon0r/dulolwh47ytb1tre05ie9joj/image001.png)
 
@@ -26,6 +26,8 @@ author: Eric
 ![index](http://static.zybuluo.com/comeon0r/m1diqob5o7c5lx6m0barzcgx/image006.png)
 
 p75下的response time退化到了748ms，更别提p95了。这种情况是万万不能上线的。
+
+# 查找原因
 
 开始查找原因！
 
@@ -59,7 +61,7 @@ p75下的response time退化到了748ms，更别提p95了。这种情况是万�
 
 2）尝试关闭系统里其他的service calling，减少端口占用的情况，看是否有缓解，结论：并没有。
 
-## 柳暗花明
+# 柳暗花明
 
 毫无办法之际，继续看了下log，突发奇想对每秒的call number进行了下统计：
 
@@ -105,7 +107,7 @@ $ grep 'bullseye sending' lina-test-mobile.out | grep "20:35:.*" | wc -l
 
 因为立项之前的测试刚好没用到这个架构，所以calling是均匀分布在每秒里的，因此虽然call number很大但是response time仍然很小。然而，项目完成之后，压力测试放在整个系统中做，原来的系统架构的弊端就显现出来了。
 
-## 经验与教训
+# 经验与教训
 
 解决方案就不说了，不是本文重点。
 
