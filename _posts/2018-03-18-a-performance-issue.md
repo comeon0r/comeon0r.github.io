@@ -35,7 +35,11 @@ p75下的response time退化到了748ms，更别提p95了。这种情况是万�
 
 分析1：是因为这个external service存在缺陷，会因call number的提升而导致明显的performance degradation？
 
-看起来不像，因为在立项前的测试中，我在系统中直接call这个external service，用的是全量数据，call number从图中看明显比年后的压力测试更大，然而性能却更好。否决！
+看起来不像，因为在立项前的测试中，我在系统中直接call这个external service，用的是全量数据，call number从图中看明显比年后的压力测试更大，然而性能却更好。
+
+难道system performance会因call number的提升而提升？似乎有些道理，特别是在长连接服用的情况下，太少的calling可能会导致连接的频繁创建和消亡，反而导致性能下降。
+
+然而，看了下代码里用的网络库，感觉这个原因不太可信。
 
 ## external service性能？
 
