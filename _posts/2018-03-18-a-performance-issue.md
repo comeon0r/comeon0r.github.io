@@ -62,7 +62,37 @@ p75下的response time退化到了748ms，更别提p95了。这种情况是万�
 毫无办法之际，继续看了下log，突发奇想对每秒的call number进行了下统计：
 
 ```
+$ grep 'bullseye sending' lina-test-mobile.out | grep "20:35:00" | wc -l
+1454
+```
+
+很正常，看看一下秒呢：
+
+```
+$ grep 'bullseye sending' lina-test-mobile.out | grep "20:35:01" | wc -l
+0
+```
+
+纳尼，为什么01秒时候的call number这么少！
+
+再下一秒呢？
+
+```
+$ grep 'bullseye sending' lina-test-mobile.out | grep "20:35:02" | wc -l
+0
+```
+
+也是没有任何calling!
+
+看一整分钟呢？
+
+```
 $ grep 'bullseye sending' lina-test-mobile.out | grep "20:35:.*" | wc -l
 1454
 ```
 
+答案已经很明显了：虽然从Ganafa UI上看，我们的call number在20~30左右，但这其实是一分钟之内的平均值，事实是，因为某种原因，我们的系统在这一分钟内的calls全部集中在了一秒内发送，这导致了很严重的网络拥堵问题，难怪性能会变这么差！
+
+回过头来再检查代码，发现是系统设计的问题，我们会将输入数据按照某种规则分组，相同的组的数据会通过一个actor-dispactcher申请到大概2500个actor来同时跑，这会导致相同类型的数据几乎是同时跑，也就是会同时调用某个external service。
+
+验证一下，把actor-dispactcher的actor number改为一个很小的数，
