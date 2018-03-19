@@ -36,3 +36,26 @@ p75下的response time退化到了748ms，更别提p95了。这种情况是万�
 紧急联系了对方的邮件组，回应速度非常快：“We are investigating, but so far I don’t see any issues。。。”，还附了一张图：
 
 ![index](http://static.zybuluo.com/comeon0r/ckx6vth6xdx67ntdxaj2vxat/image005.png)
+
+简而言之就是————“哥，我们好着呢，不是我们的问题！”。
+
+这还得了，一边联系对方继续排查，还schedule了一个非常早的会议（毕竟对方在美国），不放过任何可能的机会，一边继续查找自己的原因。
+
+分析3：Gafana UI的显示问题？
+
+既然external service宣称自己的system没出问题，难道是我们自己踢了个乌龙？赶紧给系统打了几个log，看下真实的response time，是不是真的系统性能这么差。
+
+事实是，response time确实在几百毫秒左右，是真差！
+
+分析4：网络端口阻塞？
+
+因为我们的系统用了很多的actors，如果同时有多个actor同时通过不同的端口号发送数据，是会导致严重的性能下降。
+
+这时候，做了两件事：
+
+1）检查代码，是否有申请多个端口，或浪费端口的情况，结论：并没有。
+
+2）尝试关闭系统里其他的service calling，减少端口占用的情况，看是否有缓解，结论：并没有。
+
+
+
