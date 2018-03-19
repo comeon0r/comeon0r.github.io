@@ -31,9 +31,13 @@ p75下的response time退化到了748ms，更别提p95了。这种情况是万�
 
 开始查找原因！
 
+## call number过高？
+
 分析1：是因为这个external service存在缺陷，会因call number的提升而导致明显的performance degradation？
 
 看起来不像，因为在立项前的测试中，我在系统中直接call这个external service，用的是全量数据，call number从图中看明显比年后的压力测试更大，然而性能却更好。否决！
+
+## external service性能？
 
 分析2：当前external service存在性能问题？
 
@@ -45,21 +49,29 @@ p75下的response time退化到了748ms，更别提p95了。这种情况是万�
 
 这还得了，一边联系对方继续排查，还schedule了一个非常早的会议（毕竟对方在美国），不放过任何可能的机会，一边继续查找自己的原因。
 
+另外，直接写了一个脚本，通过curl来call这个external service，10000个请求几乎每个都是在10ms左右完成，可见external sercie应该确实没问题。
+
+## UI显示的误报？
+
 分析3：Gafana UI的显示问题？
 
 既然external service宣称自己的system没出问题，难道是我们自己踢了个乌龙？赶紧给系统打了几个log，看下真实的response time，是不是真的系统性能这么差。
 
 事实是，response time确实在几百毫秒左右，是真差！
 
+## 网络端口阻塞？
+
 分析4：网络端口阻塞？
 
 因为我们的系统用了很多的actors，如果同时有多个actor同时通过不同的端口号发送数据，是会导致严重的性能下降。
 
-这时候，做了两件事：
+这时候，做了三件事：
 
 1）检查代码，是否有申请多个端口，或浪费端口的情况，结论：并没有。
 
 2）尝试关闭系统里其他的service calling，减少端口占用的情况，看是否有缓解，结论：并没有。
+
+3) 通过`$ netstat -antp`命令查看系统的硬件资源，特别是端口号的占用情况，没有看出明显问题。
 
 # 柳暗花明
 
