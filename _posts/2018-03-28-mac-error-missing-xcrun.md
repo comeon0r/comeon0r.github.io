@@ -2,7 +2,7 @@
 layout: post
 title:  "mac error: missing xcrun"
 categories: Frontend
-tags:  github blog pages jekyll
+tags:  mac error xcrun
 author: Eric
 ---
 
