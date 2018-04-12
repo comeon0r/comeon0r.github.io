@@ -21,4 +21,6 @@ author: Eric
 xcode-select --install
 ```
 
+![index](http://static.zybuluo.com/comeon0r/4ph3vtw9u1hwgxlsjfhnmn55/Screen%20Shot%202018-03-28%20at%209.50.34%20AM.png)
+
 安装XCode就可以解决了。
